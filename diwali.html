@@ -4,8 +4,43 @@
     <title>HAPPY DIWALI</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style2.css">
-
+    
+<style>
+    .container {
+    position: relative;
+    overflow: hidden;
+}
+.vi {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+@keyframes blink {
+    0%,100%
+    {
+        opacity: 1;
+    }
+    50%{
+        opacity: 0 ;
+    }
+    
+}
+.overlay {
+    font-family: Segoe UI;
+    font-weight: bold;
+    font-size: 400px;
+    position: absolute;
+     top: 50%;
+     left: 50%;
+     animation: blink infinite 1s;
+     transform:translate(-50%,-50%);
+    color: gold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    pointer-events: none;
+    transition: all 1s;
+}
+</style>
 </head>
 <body>
     <div class="container">
